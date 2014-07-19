@@ -13,11 +13,11 @@ package contaBancaria;
 public class ContaCorrente extends Conta{
     
     public void atualiza(double taxa){
-        this.saldo +=  this.saldo * taxa * 2;        
+        this.saldo +=  this.saldo * taxa * cliente.getTipo().getFatorMultiplicacao();
     }
     
     public void deposita(double conta){
-        this.saldo += conta - 0.10;
+        this.saldo += conta - ContaPoupanca.VALOR_DEPOSITO_DEPOSITO;
     }
     
 }

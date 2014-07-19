@@ -12,8 +12,11 @@ package contaBancaria;
  */
 public class ContaPoupanca extends Conta{
     
+    public static final int VALOR_PADRAO_MULTIPLICACAO = 3;
+    public static final double VALOR_DEPOSITO_DEPOSITO = 0.10;
+    
     public void atualiza(double taxa){
-        this.saldo += this.saldo * taxa * 3;
+        this.saldo += this.saldo * taxa * VALOR_PADRAO_MULTIPLICACAO;
     }
     
 }

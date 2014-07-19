@@ -12,7 +12,16 @@ package contaBancaria;
  */
 public class Conta {
     protected double saldo;
-    
+    protected Cliente cliente;
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+            
     public double getSaldo(){
         return this.saldo;
     }
